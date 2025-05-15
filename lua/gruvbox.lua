@@ -67,64 +67,73 @@ Gruvbox.config = {
   dim_inactive = false,
   transparent_mode = false,
 }
-
--- Paleta CrimsonHacker modificada
 ---@class GruvboxPalette
 Gruvbox.palette = {
-	dark0_hard = "#1a0000",
-	dark0 = "#1a0000",
-	dark0_soft = "#220000",
-	dark1 = "#330000",
-	dark2 = "#440000",
-	dark3 = "#550000",
-	dark4 = "#660000",
-	light0_hard = "#ff3c3c",
-	light0 = "#ff3c3c",
-	light0_soft = "#ff5e5e",
-	light1 = "#ff7a7a",
-	light2 = "#ff9696",
-	light3 = "#ffb2b2",
-	light4 = "#ffcece",
-	bright_red = "#ff0000",
-	bright_green = "#00ff00",
-	bright_yellow = "#ffff00",
-	bright_blue = "#0000ff",
-	bright_purple = "#ff00ff",
-	bright_aqua = "#00ffff",
-	bright_orange = "#ff8000",
-	neutral_red = "#cc0000",
-	neutral_green = "#00cc00",
-	neutral_yellow = "#cccc00",
-	neutral_blue = "#0000cc",
-	neutral_purple = "#cc00cc",
-	neutral_aqua = "#00cccc",
-	neutral_orange = "#cc6600",
-	faded_red = "#990000",
-	faded_green = "#009900",
-	faded_yellow = "#999900",
-	faded_blue = "#000099",
-	faded_purple = "#990099",
-	faded_aqua = "#009999",
-	faded_orange = "#994c00",
-	dark_red_hard = "#800000",
-	dark_red = "#800000",
-	dark_red_soft = "#8b0000",
-	light_red_hard = "#ff3333",
-	light_red = "#ff3333",
-	light_red_soft = "#ff4747",
-	dark_green_hard = "#006600",
-	dark_green = "#006600",
-	dark_green_soft = "#007300",
-	light_green_hard = "#33ff33",
-	light_green = "#33ff33",
-	light_green_soft = "#47ff47",
-	dark_aqua_hard = "#006666",
-	dark_aqua = "#006666",
-	dark_aqua_soft = "#007373",
-	light_aqua_hard = "#33ffff",
-	light_aqua = "#33ffff",
-	light_aqua_soft = "#47ffff",
-	gray = "#666666",
+  dark0_hard      = "#1a0000",  -- fundo principal
+  dark0           = "#1a0000",
+  dark0_soft      = "#220000",  -- fundo alternativo
+  dark1           = "#330000",
+  dark2           = "#440000",
+  dark3           = "#550000",
+  dark4           = "#660000",
+
+  light0_hard     = "#ff3c3c",  -- foreground principal
+  light0          = "#ff3c3c",
+  light0_soft     = "#ff5e5e",
+  light1          = "#ff7a7a",
+  light2          = "#ff9696",
+  light3          = "#ffb2b2",
+  light4          = "#ffcece",
+
+  bright_red      = "#ff3c3c",  -- realce/destaque
+  bright_green    = "#ff7070",  -- adaptado
+  bright_yellow   = "#ffaa00",  -- vibrante, quente
+  bright_blue     = "#ff6c6c",  -- vermelho puxado pro frio
+  bright_purple   = "#ff3c6c",
+  bright_aqua     = "#ff5e7a",
+  bright_orange   = "#ff5500",
+
+  neutral_red     = "#cc0000",
+  neutral_green   = "#cc4444",
+  neutral_yellow  = "#cc6633",
+  neutral_blue    = "#cc3c3c",
+  neutral_purple  = "#cc3366",
+  neutral_aqua    = "#cc5555",
+  neutral_orange  = "#cc3300",
+
+  faded_red       = "#990000",
+  faded_green     = "#993333",
+  faded_yellow    = "#996600",
+  faded_blue      = "#993c3c",
+  faded_purple    = "#993355",
+  faded_aqua      = "#995555",
+  faded_orange    = "#994422",
+
+  dark_red_hard   = "#800000",
+  dark_red        = "#800000",
+  dark_red_soft   = "#8b0000",
+
+  light_red_hard  = "#ff3333",
+  light_red       = "#ff3333",
+  light_red_soft  = "#ff4747",
+
+  dark_green_hard = "#4d0000",
+  dark_green      = "#4d0000",
+  dark_green_soft = "#5e0000",
+
+  light_green_hard = "#ff5e5e",
+  light_green      = "#ff6e6e",
+  light_green_soft = "#ff7f7f",
+
+  dark_aqua_hard  = "#661a1a",
+  dark_aqua       = "#661a1a",
+  dark_aqua_soft  = "#732222",
+
+  light_aqua_hard = "#ff7a7a",
+  light_aqua      = "#ff8a8a",
+  light_aqua_soft = "#ff9999",
+
+  gray            = "#663333",
 }
 
 -- get a hex list of gruvbox colors based on current bg and constrast config
