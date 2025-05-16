@@ -45,7 +45,7 @@ local Gruvbox = {}
 ---@field undercurl boolean?
 ---@field underline boolean?
 Gruvbox.config = {
-  terminal_colors = true,
+  terminal_colors = false,
   undercurl = true,
   underline = true,
   bold = true,
@@ -69,71 +69,71 @@ Gruvbox.config = {
 }
 ---@class GruvboxPalette
 Gruvbox.palette = {
-  dark0_hard      = "#1a0000",  -- fundo principal
-  dark0           = "#1a0000",
-  dark0_soft      = "#220000",  -- fundo alternativo
-  dark1           = "#330000",
-  dark2           = "#440000",
-  dark3           = "#550000",
-  dark4           = "#660000",
+  dark0_hard = "#1a0000",
+  dark0 = "#1a0000",
+  dark0_soft = "#220000",
+  dark1 = "#330000",
+  dark2 = "#440000",
+  dark3 = "#550000",
+  dark4 = "#660000",
 
-  light0_hard     = "#ff3c3c",  -- foreground principal
-  light0          = "#ff3c3c",
-  light0_soft     = "#ff5e5e",
-  light1          = "#ff7a7a",
-  light2          = "#ff9696",
-  light3          = "#ffb2b2",
-  light4          = "#ffcece",
+  light0_hard = "#ff3c3c",
+  light0 = "#ff3c3c",
+  light0_soft = "#ff5e5e",
+  light1 = "#ff7a7a",
+  light2 = "#ff9696",
+  light3 = "#ffb2b2",
+  light4 = "#ffcece",
 
-  bright_red      = "#ff3c3c",  -- realce/destaque
-  bright_green    = "#ff7070",  -- adaptado
-  bright_yellow   = "#ffaa00",  -- vibrante, quente
-  bright_blue     = "#ff6c6c",  -- vermelho puxado pro frio
-  bright_purple   = "#ff3c6c",
-  bright_aqua     = "#ff5e7a",
-  bright_orange   = "#ff5500",
+  bright_red = "#ff3c3c",
+  bright_green = "#ff7070",
+  bright_yellow = "#ffaa00",
+  bright_blue = "#ff6c6c",
+  bright_purple = "#ff3c6c",
+  bright_aqua = "#ff5e7a",
+  bright_orange = "#ff5500",
 
-  neutral_red     = "#cc0000",
-  neutral_green   = "#cc4444",
-  neutral_yellow  = "#cc6633",
-  neutral_blue    = "#cc3c3c",
-  neutral_purple  = "#cc3366",
-  neutral_aqua    = "#cc5555",
-  neutral_orange  = "#cc3300",
+  neutral_red = "#cc0000",
+  neutral_green = "#cc4444",
+  neutral_yellow = "#cc6633",
+  neutral_blue = "#cc3c3c",
+  neutral_purple = "#cc3366",
+  neutral_aqua = "#cc5555",
+  neutral_orange = "#cc3300",
 
-  faded_red       = "#990000",
-  faded_green     = "#993333",
-  faded_yellow    = "#996600",
-  faded_blue      = "#993c3c",
-  faded_purple    = "#993355",
-  faded_aqua      = "#995555",
-  faded_orange    = "#994422",
+  faded_red = "#990000",
+  faded_green = "#993333",
+  faded_yellow = "#996600",
+  faded_blue = "#993c3c",
+  faded_purple = "#993355",
+  faded_aqua = "#995555",
+  faded_orange = "#994422",
 
-  dark_red_hard   = "#800000",
-  dark_red        = "#800000",
-  dark_red_soft   = "#8b0000",
+  dark_red_hard = "#800000",
+  dark_red = "#800000",
+  dark_red_soft = "#8b0000",
 
-  light_red_hard  = "#ff3333",
-  light_red       = "#ff3333",
-  light_red_soft  = "#ff4747",
+  light_red_hard = "#ff3333",
+  light_red = "#ff3333",
+  light_red_soft = "#ff4747",
 
   dark_green_hard = "#4d0000",
-  dark_green      = "#4d0000",
+  dark_green = "#4d0000",
   dark_green_soft = "#5e0000",
 
   light_green_hard = "#ff5e5e",
-  light_green      = "#ff6e6e",
+  light_green = "#ff6e6e",
   light_green_soft = "#ff7f7f",
 
-  dark_aqua_hard  = "#661a1a",
-  dark_aqua       = "#661a1a",
-  dark_aqua_soft  = "#732222",
+  dark_aqua_hard = "#661a1a",
+  dark_aqua = "#661a1a",
+  dark_aqua_soft = "#732222",
 
   light_aqua_hard = "#ff7a7a",
-  light_aqua      = "#ff8a8a",
+  light_aqua = "#ff8a8a",
   light_aqua_soft = "#ff9999",
 
-  gray            = "#663333",
+  gray = "#663333",
 }
 
 -- get a hex list of gruvbox colors based on current bg and constrast config
