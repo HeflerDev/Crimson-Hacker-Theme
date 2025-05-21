@@ -69,35 +69,74 @@ Gruvbox.config = {
   transparent_mode = false,
 }
 
+-- Gruvbox.config.overrides = {
+--   -- nvim-tree
+--   NvimTreeFolderName = { fg = "#ff5500", bold = true }, -- bright_orange
+--   NvimTreeFolderIcon = { fg = "#ffaa00" }, -- bright_yellow
+--   NvimTreeOpenedFolderName = { fg = "#ff5500", italic = true },
+--   NvimTreeRootFolder = { fg = "#ff3c3c", bold = true }, -- bright_red
+--
+--   -- neo-tree (caso use)
+--   NeoTreeDirectoryName = { fg = "#ff5500", bold = true },
+--   NeoTreeDirectoryIcon = { fg = "#ffaa00" },
+--
+--   -- Comentários
+--   Comment = { fg = "#552222", italic = true },
+--
+--   -- Strings
+--   String = { fg = "#ff5e7a" }, -- bright_aqua
+--
+--   -- Números
+--   Number = { fg = "#ff3c6c" }, -- bright_purple
+--
+--   Function = { fg = "#ffa0a0", bold = true },
+--
+--   Keyword = { fg = "#cc5555", italic = true },
+--
+--   -- Signs de erro, aviso etc
+--   DiagnosticError = { fg = "#8b0000" }, -- dark_red_soft
+--   DiagnosticWarn = { fg = "#ffaa00" }, -- bright_yellow
+--   DiagnosticInfo = { fg = "#ff6c6c" }, -- bright_blue
+--   DiagnosticHint = { fg = "" }, -- neutral_purple
+-- }
+
 Gruvbox.config.overrides = {
   -- nvim-tree
-  NvimTreeFolderName = { fg = "#ff5500", bold = true }, -- bright_orange
-  NvimTreeFolderIcon = { fg = "#ffaa00" }, -- bright_yellow
-  NvimTreeOpenedFolderName = { fg = "#ff5500", italic = true },
-  NvimTreeRootFolder = { fg = "#ff3c3c", bold = true }, -- bright_red
+  NvimTreeFolderName = { fg = "#00ffff", bold = true }, -- ciano
+  NvimTreeFolderIcon = { fg = "#ff00ff" }, -- magenta
+  NvimTreeOpenedFolderName = { fg = "#00ffff", italic = true },
+  NvimTreeRootFolder = { fg = "#ffff00", bold = true }, -- amarelo
 
-  -- neo-tree (caso use)
-  NeoTreeDirectoryName = { fg = "#ff5500", bold = true },
-  NeoTreeDirectoryIcon = { fg = "#ffaa00" },
+  -- neo-tree
+  NeoTreeDirectoryName = { fg = "#00ffff", bold = true },
+  NeoTreeDirectoryIcon = { fg = "#ff00ff" },
 
   -- Comentários
-  Comment = { fg = "#552222", italic = true },
+  Comment = { fg = "#777777", italic = true }, -- cinza discreto
 
   -- Strings
-  String = { fg = "#ff5e7a" }, -- bright_aqua
+  String = { fg = "#00ff00", bold = true }, -- verde neon
 
   -- Números
-  Number = { fg = "#ff3c6c" }, -- bright_purple
+  Number = { fg = "#ff8800" }, -- laranja vivo
 
-  Function = { fg = "#ffa0a0", bold = true },
+  -- Funções
+  Function = { fg = "#3399ff", bold = true }, -- azul claro
 
-  Keyword = { fg = "#cc5555", italic = true },
+  -- Palavras-chave
+  Keyword = { fg = "#ff00aa", italic = true }, -- rosa neon
 
-  -- Signs de erro, aviso etc
-  DiagnosticError = { fg = "#8b0000" }, -- dark_red_soft
-  DiagnosticWarn = { fg = "#ffaa00" }, -- bright_yellow
-  DiagnosticInfo = { fg = "#ff6c6c" }, -- bright_blue
-  DiagnosticHint = { fg = "" }, -- neutral_purple
+  -- Erros e diagnósticos
+  DiagnosticError = { fg = "#ff00ff", underline = true }, -- magenta
+  DiagnosticWarn = { fg = "#ffaa00", underline = true }, -- laranja
+  DiagnosticInfo = { fg = "#00ccff", underline = true }, -- azul ciano
+  DiagnosticHint = { fg = "#bbbbbb", italic = true }, -- cinza claro
+
+  -- Importações
+  ["@keyword.import"] = { fg = "#cc00ff", italic = true },
+  ["@include"] = { fg = "#cc00ff", italic = true },
+  ["@namespace"] = { fg = "#ff4444", bold = true }, -- nomes de módulos/pacotes
+  ["@variable"] = { fg = "#ffffff" }, -- variáveis padrão
 }
 
 ---@class GruvboxPalette
@@ -112,7 +151,7 @@ Gruvbox.palette = {
 
   light0_hard = "#ff3c3c",
   light0 = "#ff3c3c",
-  light0_soft = "red",
+  light0_soft = "#ff5e5e",
   light1 = "#ff7a7a",
   light2 = "#ff9696",
   light3 = "#ffb2b2",
