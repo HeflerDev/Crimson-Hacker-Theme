@@ -69,43 +69,15 @@ Gruvbox.config = {
   transparent_mode = false,
 }
 
-Gruvbox.config.overrides = {
-  -- nvim-tree
-  NvimTreeFolderName = { fg = "#ff5500", bold = true }, -- bright_orange
-  NvimTreeFolderIcon = { fg = "#ffaa00" }, -- bright_yellow
-  NvimTreeOpenedFolderName = { fg = "#ff5500", italic = true },
-  NvimTreeRootFolder = { fg = "#ff3c3c", bold = true }, -- bright_red
-
-  -- neo-tree (caso use)
-  NeoTreeDirectoryName = { fg = "#ff5500", bold = true },
-  NeoTreeDirectoryIcon = { fg = "#ffaa00" },
-
-  -- Comentários
-  Comment = { fg = "#663333", italic = true }, -- gray
-
-  -- Strings
-  String = { fg = "#ff5e7a" }, -- bright_aqua
-
-  -- Números
-  Number = { fg = "#ff3c6c" }, -- bright_purple
-
-  -- Signs de erro, aviso etc
-  DiagnosticError = { fg = "#8b0000" }, -- dark_red_soft
-  DiagnosticWarn = { fg = "#ffaa00" }, -- bright_yellow
-  DiagnosticInfo = { fg = "#ff6c6c" }, -- bright_blue
-  DiagnosticHint = { fg = "#cc3366" }, -- neutral_purple
-}
-
 ---@class GruvboxPalette
 Gruvbox.palette = {
-
-  dark0_hard = "#120000", -- mais escuro
-  dark0 = "#1a0000", -- mantém
-  dark0_soft = "#240000", -- ajusta um pouco
-  dark1 = "#330000", -- ok
-  dark2 = "#441111", -- levemente mais quente
-  dark3 = "#552222",
-  dark4 = "#663333",
+  dark0_hard = "#1a0000",
+  dark0 = "#1a0000",
+  dark0_soft = "#220000",
+  dark1 = "#330000",
+  dark2 = "#440000",
+  dark3 = "#550000",
+  dark4 = "#660000",
 
   light0_hard = "#ff3c3c",
   light0 = "#ff3c3c",
