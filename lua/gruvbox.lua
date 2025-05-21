@@ -69,6 +69,33 @@ Gruvbox.config = {
   transparent_mode = false,
 }
 
+Gruvbox.config.overrides = {
+  -- nvim-tree
+  NvimTreeFolderName = { fg = "#ff5500", bold = true }, -- bright_orange
+  NvimTreeFolderIcon = { fg = "#ffaa00" }, -- bright_yellow
+  NvimTreeOpenedFolderName = { fg = "#ff5500", italic = true },
+  NvimTreeRootFolder = { fg = "#ff3c3c", bold = true }, -- bright_red
+
+  -- neo-tree (caso use)
+  NeoTreeDirectoryName = { fg = "#ff5500", bold = true },
+  NeoTreeDirectoryIcon = { fg = "#ffaa00" },
+
+  -- Comentários
+  Comment = { fg = "#663333", italic = true }, -- gray
+
+  -- Strings
+  String = { fg = "#ff5e7a" }, -- bright_aqua
+
+  -- Números
+  Number = { fg = "#ff3c6c" }, -- bright_purple
+
+  -- Signs de erro, aviso etc
+  DiagnosticError = { fg = "#8b0000" }, -- dark_red_soft
+  DiagnosticWarn = { fg = "#ffaa00" }, -- bright_yellow
+  DiagnosticInfo = { fg = "#ff6c6c" }, -- bright_blue
+  DiagnosticHint = { fg = "#cc3366" }, -- neutral_purple
+}
+
 ---@class GruvboxPalette
 Gruvbox.palette = {
 
@@ -124,9 +151,9 @@ Gruvbox.palette = {
   dark_green = "#4d0000",
   dark_green_soft = "#5e0000",
 
-  light_green_hard = "pink",
-  light_green = "red",
-  light_green_soft = "blue",
+  light_green_hard = "#ff5e5e",
+  light_green = "#ff6e6e",
+  light_green_soft = "#ff7f7f",
 
   dark_aqua_hard = "#661a1a",
   dark_aqua = "#661a1a",
