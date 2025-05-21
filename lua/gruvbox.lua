@@ -94,7 +94,8 @@ Gruvbox.config.overrides = {
   Keyword = { fg = "#cc5555", italic = true },
 
   -- Signs de erro, aviso etc
-  DiagnosticError = { fg = "#8b0000" }, -- dark_red_soft
+  DiagnosticError = { fg = "#bf00ff", underline = true },
+
   DiagnosticWarn = { fg = "#ffaa00" }, -- bright_yellow
   DiagnosticInfo = { fg = "#ff6c6c" }, -- bright_blue
   DiagnosticHint = { fg = "#cc3366" }, -- neutral_purple
