@@ -102,10 +102,10 @@ Gruvbox.config = {
 
 Gruvbox.config.overrides = {
   -- nvim-tree
-  NvimTreeFolderName = { fg = "#00ffff", bold = true }, -- ciano
-  NvimTreeFolderIcon = { fg = "#ff00ff" }, -- magenta
-  NvimTreeOpenedFolderName = { fg = "#00ffff", italic = true },
-  NvimTreeRootFolder = { fg = "#ffff00", bold = true }, -- amarelo
+  NvimTreeFolderName = { fg = "#ff5500", bold = true }, -- ciano
+  NvimTreeFolderIcon = { fg = "#ffaa00" }, -- bright_yellow
+  NvimTreeOpenedFolderName = { fg = "#ff5500", italic = true },
+  NvimTreeRootFolder = { fg = "#ff3c3c", bold = true }, -- bright_red
 
   -- neo-tree
   NeoTreeDirectoryName = { fg = "#00ffff", bold = true },
