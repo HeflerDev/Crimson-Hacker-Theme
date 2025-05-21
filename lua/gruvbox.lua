@@ -124,9 +124,9 @@ Gruvbox.palette = {
   dark_green = "#4d0000",
   dark_green_soft = "#5e0000",
 
-  light_green_hard = "#ff5e5e",
-  light_green = "#ff6e6e",
-  light_green_soft = "#ff7f7f",
+  light_green_hard = "pink",
+  light_green = "red",
+  light_green_soft = "blue",
 
   dark_aqua_hard = "#661a1a",
   dark_aqua = "#661a1a",
