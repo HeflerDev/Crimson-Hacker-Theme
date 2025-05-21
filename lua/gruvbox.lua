@@ -97,7 +97,7 @@ Gruvbox.config.overrides = {
   DiagnosticError = { fg = "#bf00ff", underline = true },
 
   DiagnosticWarn = { fg = "#ffaa00" }, -- bright_yellow
-  DiagnosticInfo = { fg = "#ff6c6c" }, -- bright_blue
+  DiagnosticInfo = { fg = "#bf00ff" }, -- bright_blue
   DiagnosticHint = { fg = "#cc3366" }, -- neutral_purple
 }
 
