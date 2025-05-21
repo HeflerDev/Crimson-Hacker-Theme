@@ -96,8 +96,8 @@ Gruvbox.config.overrides = {
   -- Signs de erro, aviso etc
   DiagnosticError = { fg = "#8b0000" }, -- dark_red_soft
   DiagnosticWarn = { fg = "#ffaa00" }, -- bright_yellow
-  DiagnosticInfo = { fg = "#bf00ff" }, -- bright_blue
-  DiagnosticHint = { fg = "#cc3366" }, -- neutral_purple
+  DiagnosticInfo = { fg = "#ff6c6c" }, -- bright_blue
+  DiagnosticHint = { fg = "#bf00ff" }, -- neutral_purple
 }
 
 ---@class GruvboxPalette
