@@ -81,7 +81,7 @@ Gruvbox.config.overrides = {
   NeoTreeDirectoryIcon = { fg = "#ffaa00" },
 
   -- Comentários
-  Comment = { fg = "#663333", italic = true }, -- gray
+  Comment = { fg = "#552222", italic = true },
 
   -- Strings
   String = { fg = "#ff5e7a" }, -- bright_aqua
