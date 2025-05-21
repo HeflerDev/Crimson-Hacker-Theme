@@ -89,7 +89,7 @@ Gruvbox.config.overrides = {
   -- Números
   Number = { fg = "#ff3c6c" }, -- bright_purple
 
-  Function = { fg = "#ff8888", bold = true },
+  Function = { fg = "#ffa0a0", bold = true },
 
   -- Signs de erro, aviso etc
   DiagnosticError = { fg = "#8b0000" }, -- dark_red_soft
