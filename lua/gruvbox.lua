@@ -100,43 +100,82 @@ Gruvbox.config = {
 --   DiagnosticHint = { fg = "" }, -- neutral_purple
 -- }
 
+-- Gruvbox.config.overrides = {
+--   -- nvim-tree
+--   NvimTreeFolderName = { fg = "#ff5500", bold = true }, -- ciano
+--   NvimTreeFolderIcon = { fg = "#ffaa00" }, -- bright_yellow
+--   NvimTreeOpenedFolderName = { fg = "#ff5500", italic = true },
+--   NvimTreeRootFolder = { fg = "#ff3c3c", bold = true }, -- bright_red
+--
+--   -- neo-tree
+--   NeoTreeDirectoryName = { fg = "#ff5500", bold = true },
+--   NeoTreeDirectoryIcon = { fg = "#ffaa00" },
+--
+--   -- Comentários
+--   Comment = { fg = "#777777", italic = true }, -- cinza discreto
+--
+--   -- Strings
+--   String = { fg = "#00ff00", bold = true }, -- verde neon
+--
+--   -- Números
+--   Number = { fg = "#ff3c6c" }, -- bright_purple
+--
+--   -- Funções
+--   Function = { fg = "#3399ff", bold = true }, -- azul claro
+--
+--   -- Palavras-chave
+--   Keyword = { fg = "#ff00aa", italic = true }, -- rosa neon
+--
+--   -- Erros e diagnósticos
+--   DiagnosticError = { fg = "#ff00ff", underline = true }, -- magenta
+--   DiagnosticWarn = { fg = "#ffaa00", underline = true }, -- laranja
+--   DiagnosticInfo = { fg = "#00ccff", underline = true }, -- azul ciano
+--   DiagnosticHint = { fg = "#bbbbbb", italic = true }, -- cinza claro
+--
+--   -- Importações
+--   ["@keyword.import"] = { fg = "#cc00ff", italic = true },
+--   ["@include"] = { fg = "#cc00ff", italic = true },
+--   ["@namespace"] = { fg = "#ff4444", bold = true }, -- nomes de módulos/pacotes
+--   ["@variable"] = { fg = "#ffffff" }, -- variáveis padrão
+-- }
+
 Gruvbox.config.overrides = {
   -- nvim-tree
-  NvimTreeFolderName = { fg = "#ff5500", bold = true }, -- ciano
-  NvimTreeFolderIcon = { fg = "#ffaa00" }, -- bright_yellow
-  NvimTreeOpenedFolderName = { fg = "#ff5500", italic = true },
-  NvimTreeRootFolder = { fg = "#ff3c3c", bold = true }, -- bright_red
+  NvimTreeFolderName = { fg = "#ff5555", bold = true }, -- bright coral red
+  NvimTreeFolderIcon = { fg = "#ff7777" }, -- softer red
+  NvimTreeOpenedFolderName = { fg = "#ff5555", italic = true },
+  NvimTreeRootFolder = { fg = "#ff3c3c", bold = true }, -- standard bright red
 
   -- neo-tree
-  NeoTreeDirectoryName = { fg = "#00ffff", bold = true },
-  NeoTreeDirectoryIcon = { fg = "#ff00ff" },
+  NeoTreeDirectoryName = { fg = "#ff5555", bold = true },
+  NeoTreeDirectoryIcon = { fg = "#ff7777" },
 
   -- Comentários
-  Comment = { fg = "#777777", italic = true }, -- cinza discreto
+  Comment = { fg = "#774444", italic = true }, -- muted reddish-gray
 
   -- Strings
-  String = { fg = "#00ff00", bold = true }, -- verde neon
+  String = { fg = "#ff6e6e", bold = true }, -- soft pinkish red
 
   -- Números
-  Number = { fg = "#ff8800" }, -- laranja vivo
+  Number = { fg = "#ff3c6c" }, -- bright red-magenta
 
   -- Funções
-  Function = { fg = "#3399ff", bold = true }, -- azul claro
+  Function = { fg = "#ff9999", bold = true }, -- pale red
 
   -- Palavras-chave
-  Keyword = { fg = "#ff00aa", italic = true }, -- rosa neon
+  Keyword = { fg = "#cc3366", italic = true }, -- deeper reddish magenta
 
   -- Erros e diagnósticos
-  DiagnosticError = { fg = "#ff00ff", underline = true }, -- magenta
-  DiagnosticWarn = { fg = "#ffaa00", underline = true }, -- laranja
-  DiagnosticInfo = { fg = "#00ccff", underline = true }, -- azul ciano
-  DiagnosticHint = { fg = "#bbbbbb", italic = true }, -- cinza claro
+  DiagnosticError = { fg = "#8b0000", underline = true }, -- dark red
+  DiagnosticWarn = { fg = "#cc4444", underline = true }, -- warning red
+  DiagnosticInfo = { fg = "#ff5e5e", underline = true }, -- light warning red
+  DiagnosticHint = { fg = "#aa6666", italic = true }, -- faded hint red
 
   -- Importações
-  ["@keyword.import"] = { fg = "#cc00ff", italic = true },
-  ["@include"] = { fg = "#cc00ff", italic = true },
-  ["@namespace"] = { fg = "#ff4444", bold = true }, -- nomes de módulos/pacotes
-  ["@variable"] = { fg = "#ffffff" }, -- variáveis padrão
+  ["@keyword.import"] = { fg = "#cc3366", italic = true }, -- same as Keyword
+  ["@include"] = { fg = "#cc3366", italic = true },
+  ["@namespace"] = { fg = "#dd2222", bold = true }, -- distinct red
+  ["@variable"] = { fg = "#ffcccc" }, -- very pale pink
 }
 
 ---@class GruvboxPalette
