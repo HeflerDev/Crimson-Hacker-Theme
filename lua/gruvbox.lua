@@ -136,7 +136,7 @@ Gruvbox.config = {
 --   ["@keyword.import"] = { fg = "#cc00ff", italic = true },
 --   ["@include"] = { fg = "#cc00ff", italic = true },
 --   ["@namespace"] = { fg = "#ff4444", bold = true }, -- nomes de módulos/pacotes
---   ["@variable"] = { fg = "#ffffff" }, -- variáveis padrão
+--   ["@variable"] = { fg = "#B30000" }, -- variáveis padrão
 -- }
 
 Gruvbox.config.overrides = {
