@@ -69,76 +69,6 @@ Gruvbox.config = {
   transparent_mode = false,
 }
 
--- Gruvbox.config.overrides = {
---   -- nvim-tree
---   NvimTreeFolderName = { fg = "#ff5500", bold = true }, -- bright_orange
---   NvimTreeFolderIcon = { fg = "#ffaa00" }, -- bright_yellow
---   NvimTreeOpenedFolderName = { fg = "#ff5500", italic = true },
---   NvimTreeRootFolder = { fg = "#ff3c3c", bold = true }, -- bright_red
---
---   -- neo-tree (caso use)
---   NeoTreeDirectoryName = { fg = "#ff5500", bold = true },
---   NeoTreeDirectoryIcon = { fg = "#ffaa00" },
---
---   -- Comentários
---   Comment = { fg = "#552222", italic = true },
---
---   -- Strings
---   String = { fg = "#ff5e7a" }, -- bright_aqua
---
---   -- Números
---   Number = { fg = "#ff3c6c" }, -- bright_purple
---
---   Function = { fg = "#ffa0a0", bold = true },
---
---   Keyword = { fg = "#cc5555", italic = true },
---
---   -- Signs de erro, aviso etc
---   DiagnosticError = { fg = "#8b0000" }, -- dark_red_soft
---   DiagnosticWarn = { fg = "#ffaa00" }, -- bright_yellow
---   DiagnosticInfo = { fg = "#ff6c6c" }, -- bright_blue
---   DiagnosticHint = { fg = "" }, -- neutral_purple
--- }
-
--- Gruvbox.config.overrides = {
---   -- nvim-tree
---   NvimTreeFolderName = { fg = "#ff5500", bold = true }, -- ciano
---   NvimTreeFolderIcon = { fg = "#ffaa00" }, -- bright_yellow
---   NvimTreeOpenedFolderName = { fg = "#ff5500", italic = true },
---   NvimTreeRootFolder = { fg = "#ff3c3c", bold = true }, -- bright_red
---
---   -- neo-tree
---   NeoTreeDirectoryName = { fg = "#ff5500", bold = true },
---   NeoTreeDirectoryIcon = { fg = "#ffaa00" },
---
---   -- Comentários
---   Comment = { fg = "#777777", italic = true }, -- cinza discreto
---
---   -- Strings
---   String = { fg = "#00ff00", bold = true }, -- verde neon
---
---   -- Números
---   Number = { fg = "#ff3c6c" }, -- bright_purple
---
---   -- Funções
---   Function = { fg = "#3399ff", bold = true }, -- azul claro
---
---   -- Palavras-chave
---   Keyword = { fg = "#ff00aa", italic = true }, -- rosa neon
---
---   -- Erros e diagnósticos
---   DiagnosticError = { fg = "#ff00ff", underline = true }, -- magenta
---   DiagnosticWarn = { fg = "#ffaa00", underline = true }, -- laranja
---   DiagnosticInfo = { fg = "#00ccff", underline = true }, -- azul ciano
---   DiagnosticHint = { fg = "#bbbbbb", italic = true }, -- cinza claro
---
---   -- Importações
---   ["@keyword.import"] = { fg = "#cc00ff", italic = true },
---   ["@include"] = { fg = "#cc00ff", italic = true },
---   ["@namespace"] = { fg = "#ff4444", bold = true }, -- nomes de módulos/pacotes
---   ["@variable"] = { fg = "#B30000" }, -- variáveis padrão
--- }
-
 Gruvbox.config.overrides = {
   -- nvim-tree
   NvimTreeFolderName = { fg = "#ff5555", bold = true }, -- bright coral red
@@ -147,8 +77,8 @@ Gruvbox.config.overrides = {
   NvimTreeRootFolder = { fg = "#ff3c3c", bold = true }, -- standard bright red
 
   -- neo-tree
-  NeoTreeDirectoryName = { fg = "#ff5555", bold = true },
-  NeoTreeDirectoryIcon = { fg = "#ff7777" },
+  NeoTreeDirectoryName = { fg = "#ff5500", bold = true },
+  NeoTreeDirectoryIcon = { fg = "#ffaa00" },
 
   -- Comentários
   Comment = { fg = "#774444", italic = true }, -- muted reddish-gray
@@ -1445,7 +1375,7 @@ Gruvbox.load = function()
   if vim.g.colors_name then
     vim.cmd.hi("clear")
   end
-  vim.g.colors_name = "gruvbox"
+  vim.g.colors_name = "rubr0"
   vim.o.termguicolors = true
 
   local groups = get_groups()
