@@ -1,7 +1,7 @@
----@class Gruvbox
----@field config GruvboxConfig
----@field palette GruvboxPalette
-local Gruvbox = {}
+---@class Rubr0
+---@field config Rubr0Config
+---@field palette Rubr0Palette
+local Rubr0 = {}
 
 ---@alias Contrast "hard" | "soft" | ""
 
@@ -28,7 +28,7 @@ local Gruvbox = {}
 ---@field reverse boolean?
 ---@field nocombine boolean?
 
----@class GruvboxConfig
+---@class Rubr0Config
 ---@field bold boolean?
 ---@field contrast Contrast?
 ---@field dim_inactive boolean?
@@ -45,7 +45,7 @@ local Gruvbox = {}
 ---@field undercurl boolean?
 ---@field underline boolean?
 
-Gruvbox.config = {
+Rubr0.config = {
   terminal_colors = false,
   undercurl = true,
   underline = true,
@@ -69,7 +69,7 @@ Gruvbox.config = {
   transparent_mode = false,
 }
 
-Gruvbox.config.overrides = {
+Rubr0.config.overrides = {
   -- nvim-tree
   NvimTreeFolderName = { fg = "#ff5555", bold = true }, -- bright coral red
   NvimTreeFolderIcon = { fg = "#ff7777" }, -- softer red
@@ -108,8 +108,8 @@ Gruvbox.config.overrides = {
   ["@variable"] = { fg = "#ffcccc" }, -- very pale pink
 }
 
----@class GruvboxPalette
-Gruvbox.palette = {
+---@class Rubr0Palette
+Rubr0.palette = {
   dark0_hard = "#1a0000",
   dark0 = "#1a0000",
   dark0_soft = "#220000",
@@ -179,8 +179,8 @@ Gruvbox.palette = {
 
 -- get a hex list of gruvbox colors based on current bg and constrast config
 local function get_colors()
-  local p = Gruvbox.palette
-  local config = Gruvbox.config
+  local p = Rubr0.palette
+  local config = Rubr0.config
 
   for color, hex in pairs(config.palette_overrides) do
     p[color] = hex
@@ -262,7 +262,7 @@ end
 
 local function get_groups()
   local colors = get_colors()
-  local config = Gruvbox.config
+  local config = Rubr0.config
 
   if config.terminal_colors then
     local term_colors = {
@@ -289,8 +289,8 @@ local function get_groups()
   end
 
   local groups = {
-    GruvboxFg0 = { fg = colors.fg0 },
-    GruvboxFg1 = { fg = colors.fg1 },
+    Rubr0Fg0 = { fg = colors.fg0 },
+    Rubr0Fg1 = { fg = colors.fg1 },
     GruvboxFg2 = { fg = colors.fg2 },
     GruvboxFg3 = { fg = colors.fg3 },
     GruvboxFg4 = { fg = colors.fg4 },
@@ -1359,13 +1359,13 @@ local function get_groups()
   return groups
 end
 
----@param config GruvboxConfig?
-Gruvbox.setup = function(config)
-  Gruvbox.config = vim.tbl_deep_extend("force", Gruvbox.config, config or {})
+---@param config Rubr0Config?
+Rubr0.setup = function(config)
+  Rubr0.config = vim.tbl_deep_extend("force", Rubr0.config, config or {})
 end
 
 --- main load function
-Gruvbox.load = function()
+Rubr0.load = function()
   if vim.version().minor < 8 then
     vim.notify_once("gruvbox.nvim: you must use neovim 0.8 or higher")
     return
@@ -1386,4 +1386,4 @@ Gruvbox.load = function()
   end
 end
 
-return Gruvbox
+return Rubr0
