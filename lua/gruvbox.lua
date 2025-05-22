@@ -105,7 +105,7 @@ Gruvbox.config.overrides = {
   ["@keyword.import"] = { fg = "#cc3366", italic = true }, -- same as Keyword
   ["@include"] = { fg = "#cc3366", italic = true },
   ["@namespace"] = { fg = "#dd2222", bold = true }, -- distinct red
-  ["@variable"] = { fg = "#B30000" }, -- very pale pink
+  ["@variable"] = { fg = "#ff4" }, -- very pale pink
 }
 
 ---@class GruvboxPalette
