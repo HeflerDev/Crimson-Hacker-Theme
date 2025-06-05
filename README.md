@@ -1,4 +1,5 @@
-![image](https://github.com/user-attachments/assets/fe2f6dad-06af-47fe-b47a-39b107152f4d)
+
+<img src="https://github.com/user-attachments/assets/a385263f-00d9-4600-a299-279c131de265" width="300" alt="Rubr0 Logo" />
 
 ## Rubr0 Theme for Neovim
 
