@@ -1,6 +1,6 @@
-
+<div align="center">
 <img src="https://github.com/user-attachments/assets/a385263f-00d9-4600-a299-279c131de265" width="300" alt="Rubr0 Logo" />
-
+</div>
 ## Rubr0 Theme for Neovim
 
 **Rubr0** is a focused, elegant Neovim colorscheme built for developers who value clarity, discipline, and aesthetic intensity. Inspired by the deep, powerful tones of red, Rubr0 channels that energy into a theme designed to enhance your focus and reduce visual clutter—perfect for long coding sessions or moments of intense concentration.
