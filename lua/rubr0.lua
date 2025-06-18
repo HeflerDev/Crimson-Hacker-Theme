@@ -96,16 +96,16 @@ Rubr0.config.overrides = {
   Keyword = { fg = "#33cc66", italic = true },
 
   -- -- Erros e diagnósticos
-  -- DiagnosticError = { fg = "#006600", underline = true },
-  -- DiagnosticWarn = { fg = "#44cc44", underline = true },
-  -- DiagnosticInfo = { fg = "#5eff5e", underline = true },
-  -- DiagnosticHint = { fg = "#66aa66", italic = true },
-
-  -- Erros e diagnósticos
-  DiagnosticError = { fg = "#993333", underline = true },
+  DiagnosticError = { fg = "#006600", underline = true },
   DiagnosticWarn = { fg = "#44cc44", underline = true },
   DiagnosticInfo = { fg = "#5eff5e", underline = true },
   DiagnosticHint = { fg = "#66aa66", italic = true },
+
+  -- Erros e diagnósticos
+  -- DiagnosticError = { fg = "#993333", underline = true },
+  -- DiagnosticWarn = { fg = "#44cc44", underline = true },
+  -- DiagnosticInfo = { fg = "#5eff5e", underline = true },
+  -- DiagnosticHint = { fg = "#66aa66", italic = true },
 
   -- Importações
   ["@keyword.import"] = { fg = "#33cc66", italic = true },
@@ -132,7 +132,8 @@ Rubr0.palette = {
   light3 = "#99ff99",
   light4 = "#ccffcc",
 
-  bright_red = "#00ff00",
+  -- bright_red = "#00ff00",
+  bright_red = "#ff3c3c",
   bright_green = "#00cc00",
   bright_yellow = "#aaff00",
   bright_blue = "#33ff33",
