@@ -71,110 +71,110 @@ Rubr0.config = {
 
 Rubr0.config.overrides = {
   -- nvim-tree
-  NvimTreeFolderName = { fg = "#ff5555", bold = true }, -- bright coral red
-  NvimTreeFolderIcon = { fg = "#ff7777" }, -- softer red
-  NvimTreeOpenedFolderName = { fg = "#ff5555", italic = true },
-  NvimTreeRootFolder = { fg = "#ff3c3c", bold = true }, -- standard bright red
+  NvimTreeFolderName = { fg = "#00ff66", bold = true },
+  NvimTreeFolderIcon = { fg = "#33ff99" },
+  NvimTreeOpenedFolderName = { fg = "#00ff66", italic = true },
+  NvimTreeRootFolder = { fg = "#00ff00", bold = true },
 
   -- neo-tree
-  NeoTreeDirectoryName = { fg = "#ff5500", bold = true },
-  NeoTreeDirectoryIcon = { fg = "#ffaa00" },
+  NeoTreeDirectoryName = { fg = "#55ff00", bold = true },
+  NeoTreeDirectoryIcon = { fg = "#aaff00" },
 
   -- Comentários
-  Comment = { fg = "#774444", italic = true }, -- muted reddish-gray
+  Comment = { fg = "#446644", italic = true },
 
   -- Strings
-  String = { fg = "#ff6e6e", bold = true }, -- soft pinkish red
+  String = { fg = "#6eff6e", bold = true },
 
   -- Números
-  Number = { fg = "#ff3c6c" }, -- bright red-magenta
+  Number = { fg = "#00ff66" },
 
   -- Funções
-  Function = { fg = "#ff9999", bold = true }, -- pale red
+  Function = { fg = "#99ff99", bold = true },
 
   -- Palavras-chave
-  Keyword = { fg = "#cc3366", italic = true }, -- deeper reddish magenta
+  Keyword = { fg = "#33cc66", italic = true },
 
   -- Erros e diagnósticos
-  DiagnosticError = { fg = "#8b0000", underline = true }, -- dark red
-  DiagnosticWarn = { fg = "#cc4444", underline = true }, -- warning red
-  DiagnosticInfo = { fg = "#ff5e5e", underline = true }, -- light warning red
-  DiagnosticHint = { fg = "#aa6666", italic = true }, -- faded hint red
+  DiagnosticError = { fg = "#006600", underline = true },
+  DiagnosticWarn = { fg = "#44cc44", underline = true },
+  DiagnosticInfo = { fg = "#5eff5e", underline = true },
+  DiagnosticHint = { fg = "#66aa66", italic = true },
 
   -- Importações
-  ["@keyword.import"] = { fg = "#cc3366", italic = true }, -- same as Keyword
-  ["@include"] = { fg = "#cc3366", italic = true },
-  ["@namespace"] = { fg = "#dd2222", bold = true }, -- distinct red
-  ["@variable"] = { fg = "#ffcccc" }, -- very pale pink
+  ["@keyword.import"] = { fg = "#33cc66", italic = true },
+  ["@include"] = { fg = "#33cc66", italic = true },
+  ["@namespace"] = { fg = "#22dd22", bold = true },
+  ["@variable"] = { fg = "#ccffcc" },
 }
 
 ---@class Rubr0Palette
 Rubr0.palette = {
-  dark0_hard = "#1a0000",
-  dark0 = "#1a0000",
-  dark0_soft = "#220000",
-  dark1 = "#330000",
-  dark2 = "#440000",
-  dark3 = "#550000",
-  dark4 = "#660000",
+  dark0_hard = "#000d00",
+  dark0 = "#000d00",
+  dark0_soft = "#001100",
+  dark1 = "#003300",
+  dark2 = "#004400",
+  dark3 = "#005500",
+  dark4 = "#006600",
 
-  light0_hard = "#ff3c3c",
-  light0 = "#ff3c3c",
-  light0_soft = "#ff5e5e",
-  light1 = "#ff7a7a",
-  light2 = "#ff9696",
-  light3 = "#ffb2b2",
-  light4 = "#ffcece",
+  light0_hard = "#00ff00",
+  light0 = "#00ff00",
+  light0_soft = "#33ff33",
+  light1 = "#66ff66",
+  light2 = "#80ff80",
+  light3 = "#99ff99",
+  light4 = "#ccffcc",
 
-  bright_red = "#ff3c3c",
-  bright_green = "#ff7070",
-  bright_yellow = "#ffaa00",
-  bright_blue = "#ff6c6c",
-  bright_purple = "#ff3c6c",
-  bright_aqua = "#ff5e7a",
-  bright_orange = "#ff5500",
+  bright_red = "#00ff00",
+  bright_green = "#00cc00",
+  bright_yellow = "#aaff00",
+  bright_blue = "#33ff33",
+  bright_purple = "#00ff66",
+  bright_aqua = "#00ffaa",
+  bright_orange = "#55ff00",
 
-  neutral_red = "#cc0000",
-  neutral_green = "#cc4444",
-  neutral_yellow = "#cc6633",
-  neutral_blue = "#cc3c3c",
-  neutral_purple = "#cc3366",
-  neutral_aqua = "#cc5555",
-  neutral_orange = "#cc3300",
+  neutral_red = "#00cc00",
+  neutral_green = "#44cc44",
+  neutral_yellow = "#88cc44",
+  neutral_blue = "#33cc33",
+  neutral_purple = "#33cc66",
+  neutral_aqua = "#55cc55",
+  neutral_orange = "#55aa33",
 
-  faded_red = "#990000",
-  faded_green = "#993333",
-  faded_yellow = "#996600",
-  faded_blue = "#993c3c",
-  faded_purple = "#993355",
-  faded_aqua = "#995555",
-  faded_orange = "#994422",
+  faded_red = "#009900",
+  faded_green = "#339933",
+  faded_yellow = "#669933",
+  faded_blue = "#339966",
+  faded_purple = "#339977",
+  faded_aqua = "#339988",
+  faded_orange = "#447744",
 
-  dark_red_hard = "#800000",
-  dark_red = "#800000",
-  dark_red_soft = "#8b0000",
+  dark_red_hard = "#006600",
+  dark_red = "#006600",
+  dark_red_soft = "#007700",
 
-  light_red_hard = "#ff3333",
-  light_red = "#ff3333",
-  light_red_soft = "#ff4747",
+  light_red_hard = "#33ff33",
+  light_red = "#33ff33",
+  light_red_soft = "#47ff47",
 
-  dark_green_hard = "#4d0000",
-  dark_green = "#4d0000",
-  dark_green_soft = "#5e0000",
+  dark_green_hard = "#003300",
+  dark_green = "#003300",
+  dark_green_soft = "#004400",
 
-  light_green_hard = "#ff5e5e",
-  light_green = "#ff6e6e",
-  light_green_soft = "#ff7f7f",
+  light_green_hard = "#66ff66",
+  light_green = "#6eff6e",
+  light_green_soft = "#7fff7f",
 
-  dark_aqua_hard = "#661a1a",
-  dark_aqua = "#661a1a",
-  dark_aqua_soft = "#732222",
+  dark_aqua_hard = "#1a661a",
+  dark_aqua = "#1a661a",
+  dark_aqua_soft = "#227322",
 
-  light_aqua_hard = "#ff7a7a",
-  light_aqua = "#ff8a8a",
-  light_aqua_soft = "#ff9999",
+  light_aqua_hard = "#7aff7a",
+  light_aqua = "#8aff8a",
+  light_aqua_soft = "#99ff99",
 
-  gray = "#663333",
+  gray = "#336633",
 }
 
 -- get a hex list of gruvbox colors based on current bg and constrast config
