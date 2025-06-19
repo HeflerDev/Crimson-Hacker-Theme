@@ -124,7 +124,7 @@ Rubr0.palette = {
   dark3 = "#005500",
   dark4 = "#006600",
 
-  light0_hard = "#fc1c03",
+  light0_hard = "#00ff00",
   light0 = "#00ff00",
   light0_soft = "#33ff33",
   light1 = "#66ff66",
@@ -132,7 +132,7 @@ Rubr0.palette = {
   light3 = "#99ff99",
   light4 = "#ccffcc",
 
-  bright_red = "#993333",
+  bright_red = "#00ff00",
   bright_green = "#00cc00",
   bright_yellow = "#aaff00",
   bright_blue = "#33ff33",
@@ -295,8 +295,8 @@ local function get_groups()
   end
 
   local groups = {
-    Rubr0Fg0 = { fg = colors.fg0 },
-    Rubr0Fg1 = { fg = colors.fg1 },
+    GruvboxFg0 = { fg = colors.fg0 },
+    GruvboxFg1 = { fg = colors.fg1 },
     GruvboxFg2 = { fg = colors.fg2 },
     GruvboxFg3 = { fg = colors.fg3 },
     GruvboxFg4 = { fg = colors.fg4 },
