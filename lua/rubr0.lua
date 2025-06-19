@@ -96,7 +96,7 @@ Rubr0.config.overrides = {
   Keyword = { fg = "#33cc66", italic = true },
 
   -- -- Erros e diagnósticos
-  DiagnosticError = { fg = "#006600", underline = true },
+  DiagnosticError = { fg = "#993333", underline = true },
   DiagnosticWarn = { fg = "#44cc44", underline = true },
   DiagnosticInfo = { fg = "#5eff5e", underline = true },
   DiagnosticHint = { fg = "#66aa66", italic = true },
