@@ -132,8 +132,7 @@ Rubr0.palette = {
   light3 = "#99ff99",
   light4 = "#ccffcc",
 
-  -- bright_red = "#00ff00",
-  bright_red = "#ff3c3c",
+  bright_red = "#00ff00",
   bright_green = "#00cc00",
   bright_yellow = "#aaff00",
   bright_blue = "#33ff33",
