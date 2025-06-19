@@ -124,7 +124,7 @@ Rubr0.palette = {
   dark3 = "#005500",
   dark4 = "#006600",
 
-  light0_hard = "#00ff00",
+  light0_hard = "#fc1c03",
   light0 = "#00ff00",
   light0_soft = "#33ff33",
   light1 = "#66ff66",
