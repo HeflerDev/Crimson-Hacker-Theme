@@ -1,0 +1,64 @@
+--
+-- ---@class Surge0nPalette
+-- Surge0n.palette = {
+--   dark0 = "#000d00",
+--   dark1 = "#003300",
+--   dark2 = "#004400",
+--   dark3 = "#005500",
+--   dark4 = "#006600",
+--
+--   light0 = "#00ff00",
+--   light1 = "#66ff66",
+--   light2 = "#80ff80",
+--   light3 = "#99ff99",
+--   light4 = "#ccffcc",
+--
+--   bright_green = "#00cc00",
+--   bright_yellow = "#aaff00",
+--   bright_blue = "#33ff33",
+--   bright_purple = "#00ff66",
+--   bright_aqua = "#00ffaa",
+--   bright_orange = "#55ff00",
+--
+--   neutral_red = "#ff3333",
+--   neutral_green = "#44cc44",
+--   neutral_yellow = "#88cc44",
+--   neutral_blue = "#33cc33",
+--   neutral_purple = "#33cc66",
+--   neutral_aqua = "#55cc55",
+--   neutral_orange = "#55aa33",
+--
+--   gray = "#336633",
+-- }
+--
+-- Surge0n.config.overrides = {
+--   Comment = { fg = "#446644", italic = true },
+--   String = { fg = "#6eff6e", bold = true },
+--   Number = { fg = "#00ff66" },
+--   Function = { fg = "#99ff99", bold = true },
+--   Keyword = { fg = "#33cc66", italic = true },
+--
+--   DiagnosticError = { fg = "#ff3333", underline = true },
+--   DiagnosticVirtualTextError = { fg = "#ff3333" },
+--   DiagnosticUnderlineError = { sp = "#ff3333", undercurl = true },
+--   ErrorMsg = { fg = "#000d00", bg = "#ff3333", bold = true },
+--   Error = { fg = "#ff3333", bold = true, reverse = true },
+--   CocErrorSign = { fg = "#ff3333" },
+--   CocErrorFloat = { fg = "#ff3333" },
+--   CocErrorHighlight = { sp = "#ff3333", undercurl = true },
+--
+--   ["@keyword.import"] = { fg = "#33cc66", italic = true },
+--   ["@include"] = { fg = "#33cc66", italic = true },
+--   ["@namespace"] = { fg = "#22dd22", bold = true },
+--   ["@variable"] = { fg = "#ccffcc" },
+--
+--   NvimTreeFolderName = { fg = "#00ff66", bold = true },
+--   NvimTreeFolderIcon = { fg = "#33ff99" },
+--   NvimTreeOpenedFolderName = { fg = "#00ff66", italic = true },
+--   NvimTreeRootFolder = { fg = "#00ff00", bold = true },
+--
+--   NeoTreeDirectoryName = { fg = "#55ff00", bold = true },
+--   NeoTreeDirectoryIcon = { fg = "#aaff00" },
+-- }
+--
+-- return Surge0n

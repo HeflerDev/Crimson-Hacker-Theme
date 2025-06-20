@@ -1,7 +1,7 @@
----@class Rubr0
----@field config Rubr0Config
----@field palette Rubr0Palette
-local Rubr0 = {}
+---@class Surge0n
+---@field config Surge0nConfig
+---@field palette Surge0nPalette
+local Surge0n = {}
 
 ---@alias Contrast "hard" | "soft" | ""
 
@@ -28,7 +28,7 @@ local Rubr0 = {}
 ---@field reverse boolean?
 ---@field nocombine boolean?
 
----@class Rubr0Config
+---@class Surge0nConfig
 ---@field bold boolean?
 ---@field contrast Contrast?
 ---@field dim_inactive boolean?
@@ -45,7 +45,7 @@ local Rubr0 = {}
 ---@field undercurl boolean?
 ---@field underline boolean?
 
-Rubr0.config = {
+Surge0n.config = {
   terminal_colors = false,
   undercurl = true,
   underline = true,
@@ -69,53 +69,8 @@ Rubr0.config = {
   transparent_mode = false,
 }
 
-Rubr0.config.overrides = {
-  -- nvim-tree
-  NvimTreeFolderName = { fg = "#00ff66", bold = true },
-  NvimTreeFolderIcon = { fg = "#33ff99" },
-  NvimTreeOpenedFolderName = { fg = "#00ff66", italic = true },
-  NvimTreeRootFolder = { fg = "#00ff00", bold = true },
-
-  -- neo-tree
-  NeoTreeDirectoryName = { fg = "#55ff00", bold = true },
-  NeoTreeDirectoryIcon = { fg = "#aaff00" },
-
-  -- Comentários
-  Comment = { fg = "#446644", italic = true },
-
-  -- Strings
-  String = { fg = "#6eff6e", bold = true },
-
-  -- Números
-  Number = { fg = "#00ff66" },
-
-  -- Funções
-  Function = { fg = "#99ff99", bold = true },
-
-  -- Palavras-chave
-  Keyword = { fg = "#33cc66", italic = true },
-
-  -- -- Erros e diagnósticos
-  DiagnosticError = { fg = "#006600", underline = true },
-  DiagnosticWarn = { fg = "#44cc44", underline = true },
-  DiagnosticInfo = { fg = "#5eff5e", underline = true },
-  DiagnosticHint = { fg = "#66aa66", italic = true },
-
-  -- Erros e diagnósticos
-  -- DiagnosticError = { fg = "#993333", underline = true },
-  -- DiagnosticWarn = { fg = "#44cc44", underline = true },
-  -- DiagnosticInfo = { fg = "#5eff5e", underline = true },
-  -- DiagnosticHint = { fg = "#66aa66", italic = true },
-
-  -- Importações
-  ["@keyword.import"] = { fg = "#33cc66", italic = true },
-  ["@include"] = { fg = "#33cc66", italic = true },
-  ["@namespace"] = { fg = "#22dd22", bold = true },
-  ["@variable"] = { fg = "#ccffcc" },
-}
-
----@class Rubr0Palette
-Rubr0.palette = {
+---@class Surge0nPalette
+Surge0n.palette = {
   dark0_hard = "#000d00",
   dark0 = "#000d00",
   dark0_soft = "#001100",
@@ -140,7 +95,7 @@ Rubr0.palette = {
   bright_aqua = "#00ffaa",
   bright_orange = "#55ff00",
 
-  neutral_red = "#00cc00",
+  neutral_red = "#ff3333",
   neutral_green = "#44cc44",
   neutral_yellow = "#88cc44",
   neutral_blue = "#33cc33",
@@ -185,8 +140,8 @@ Rubr0.palette = {
 
 -- get a hex list of gruvbox colors based on current bg and constrast config
 local function get_colors()
-  local p = Rubr0.palette
-  local config = Rubr0.config
+  local p = Surge0n.palette
+  local config = Surge0n.config
 
   for color, hex in pairs(config.palette_overrides) do
     p[color] = hex
@@ -268,7 +223,7 @@ end
 
 local function get_groups()
   local colors = get_colors()
-  local config = Rubr0.config
+  local config = Surge0n.config
 
   if config.terminal_colors then
     local term_colors = {
@@ -1365,13 +1320,13 @@ local function get_groups()
   return groups
 end
 
----@param config Rubr0Config?
-Rubr0.setup = function(config)
-  Rubr0.config = vim.tbl_deep_extend("force", Rubr0.config, config or {})
+---@param config Surge0nConfig?
+Surge0n.setup = function(config)
+  Surge0n.config = vim.tbl_deep_extend("force", Surge0n.config, config or {})
 end
 
 --- main load function
-Rubr0.load = function()
+Surge0n.load = function()
   if vim.version().minor < 8 then
     vim.notify_once("gruvbox.nvim: you must use neovim 0.8 or higher")
     return
@@ -1381,7 +1336,7 @@ Rubr0.load = function()
   if vim.g.colors_name then
     vim.cmd.hi("clear")
   end
-  vim.g.colors_name = "rubr0"
+  vim.g.colors_name = "surge0n"
   vim.o.termguicolors = true
 
   local groups = get_groups()
@@ -1392,4 +1347,4 @@ Rubr0.load = function()
   end
 end
 
-return Rubr0
+return Surge0n
