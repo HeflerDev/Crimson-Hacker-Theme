@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://github.com/user-attachments/assets/a385263f-00d9-4600-a299-279c131de265" width="300" alt="Surge0n Logo" />
+<img src="https://github.com/user-attachments/assets/c6f915e7-e1a9-42d3-bcea-4861d86fa5ea" width="300" alt="Surge0n Logo" />
 </div>
 
 ## Surge0n Theme for Neovim
